@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-   <remote  name="aosp"
-            fetch="https://android-review.googlesource.com" />
-   <default revision="refs/tags/android-13.0.0_r12"
-            remote="aosp"
-            sync-j="4" />
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com" />
+  <default revision="refs/tags/android-9.0.0_r48"
+           remote="aosp"
+           sync-c="true"
+           sync-j="4" />
 
-  <remote  name="github.intel"
-           fetch="https://github.com/intel/" />
   <remote  name="github"
            fetch="https://github.com/projectceladon/" />
-  <remote name="kernel.googlesource"
-	  fetch="https://kernel.googlesource.com/" />
 
   <include name="include/aosp_vanilla.xml" />
+  <include name="include/remove_vanilla.xml" />
   <include name="include/bsp-celadon.xml" />
-  <include name="include/celadon-manifest.xml" />
-  <include name="include/nnhal-manifest.xml" />
 
 </manifest>
